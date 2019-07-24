@@ -1,0 +1,127 @@
+
+https://github.com/JGPrakash/ServiceOn.git
+serviceon:{
+	core_services:[
+		{
+			"core_service_id:"1",
+			"core_service_name":"AC & Appliance Service"
+			"core_service_image":"service1.jpg"
+		}
+	],
+	sub_core_services:[
+		{
+			"sub_core_id":"1",
+			"core_service_id":"1",
+			"sub_core_service_name":"Laptop Service",
+			"sub_core_service_image":"laptop.jpg"
+		},
+		{
+			"sub_core_id":"2",
+			"core_service_id":"1",
+			"sub_core_service_name":"Mobile Service",
+			"sub_core_service_image":"mobile.jpg"
+		}
+	],
+	main_product_services:[
+		{
+			"main_product_service_id":"1",
+			"main_product_service_name":"Lenovo",
+			"main_product_service_image":"lenovo.jpg",
+			"sub_core_id":"1"
+		},
+		{
+			"main_product_service_id":"2",
+			"main_product_service_name":"HP",
+			"main_product_service_image":"hp.jpg",
+			"sub_core_id":"1"
+		},
+		{
+			"main_product_service_id":"3",
+			"main_product_service_name":"Samsung",
+			"main_product_service_image":"samsung.jpg",
+			"sub_core_id":"2"
+		}
+	,
+	sub_product_services:[
+		{
+			"sub_product_service_id":"1",
+			"sub_core_id":"1",
+			"sub_product_name":"Display Problem"
+		},
+		{
+			"sub_product_service_id":"2",
+			"sub_core_id":"1",
+			"sub_product_name":"Keyboard Problem"
+		}
+		{
+			"sub_product_service_id":"3",
+			"sub_core_id":"2",
+			"sub_product_name":"Battery Problem"
+		}
+	],
+	visiting_services:[
+		{
+			"visiting_id":"1",
+			"sub_core_service_id":"1",
+			"visiting_name":"Visiting Charge",
+			"visiting_price","250",
+			"visiting_description":"note:- min. visting charge is 250"
+		}
+	],
+	guarantee_services:[
+		{
+			"guarantee_service_id":"1",
+			"sub_core_id":"1",
+			"guarantee_image":"image1.jpg",
+			"guarantee_description":"Price<br><ol><li>Min Charge</li></ol>"
+		}
+	],
+	rating_services:[
+		{
+			"rating_id":"1",
+			"sub_core_id":"1",
+			"rating_points":"5",
+			"rating_description":"Good Services",
+			"customer_id":"1"
+		}
+	],
+	token_services:[
+		{
+			"token_id":"1",
+			"core_service_id":"1",
+			"sub_core_id":"1",
+			"main_product_service_id":"1",
+			"sub_product_service_id":"1",
+			"customer_name":"1",
+			"customer_address_id":"1",
+			"visiting_charge_id":"1",
+			"patner_id":"1",
+			"delivery_patner_id":"1",
+			"total_amount":"1000",
+			"token_status":"Ordered"
+		}
+	],
+	customer_services:[
+		{
+			"customer_id":"1",
+			"customer_name":"jebas",
+			"customer_mobile":"8825530028"
+		}
+	],
+	customer_address_services:[
+		{
+			"customer_address_id":"1",
+			"customer_name":"jebas",
+			"customer_address":"sathankulam",
+			"address_type":"home"
+		}
+	],
+	patner_services:[
+		{
+			"patner_id":"1",
+			"patner_name":"jebas",
+			"patner_mobile":"8825530028",
+			"patner_role":"Services | Delivery | ServiceDelivery"
+		}
+	]
+}
